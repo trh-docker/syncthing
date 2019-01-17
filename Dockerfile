@@ -7,7 +7,7 @@ RUN apt-get -y update && apt-get -y upgrade && \
 
 ENV CGO_ENABLED=0\
     BUILD_HOST=tricll.xyz \
-    BUILD_USER=docker
+    BUILD_USER=dockerquay
 RUN mkdir -p $GOPATH/src/github.com/syncthing/syncthing && cd $GOPATH/src/github.com/syncthing/ &&\
     git clone https://github.com/syncthing/syncthing.git &&\
     cd $GOPATH/src/github.com/syncthing/syncthing &&\
